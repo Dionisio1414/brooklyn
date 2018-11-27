@@ -1,1 +1,195 @@
 @import 'vars'
+
++media-breakpoint-up(xl)
+	
+// main section
+.main
+	h1, h2
+		color: $main-caption
+		text-transform: uppercase
+	&__content
+		padding: 3.906vw 0 0 3.229vw
+		h1
+			font-size: 3.125vw
+			margin-bottom: 1.927vw
+			+ p 
+				font-family: "ProximaNovaRegular", sans-serif
+				font-size: 0.99vw
+				letter-spacing: 1.0.156vw
+				margin-bottom: 2rem
+				color: #777
+		h2
+			font-size: 1.25vw
+			margin-bottom: 2.292vw
+		form
+			position: relative
+			width: 77.5%
+			label,
+			input
+				display: block
+				font-size: 0.833vw
+			label
+				font-family: "ProximaNovaRegular", sans-serif
+				font-size: 0.99vw
+				letter-spacing: 0.052vw
+				margin: 0
+			input
+				font-family: "BaronNeueBold", Arial, sans-serif
+				border: none
+				border-bottom: 1px solid #777 
+				width: 100%
+				margin-top: 1.25vw
+			label:first-child
+				margin-bottom: 1.25vw
+			label:last-child
+				margin-bottom: 0
+			.forgout-password
+				float: right
+				font-family: "ProximaNovaSemiBold", Arial, sans-serif
+				display: inline-block
+				color: #fe4646
+				letter-spacing: 0.104vw
+				text-decoration: underline
+				text-decoration-style: dashed
+			button
+				font-family: "BaronNeueBold", Arial, sans-serif
+				background-color: transparent
+				border: 3px solid $accent
+				padding: 0.729vw 0
+				width: 100%
+				margin-top: 1.042vw
+				margin-bottom: 2.5vw
+				border-radius: 4px
+				outline: none
+			.new-user
+				background-color: $accent
+				border: none
+				padding: 0.781vw 3.281vw
+				color: #4d4d4d
+				width: auto
+				height: auto
+	&__image
+		img
+			height: 100vh
+				
+	// end main section
+
+	// section admin
+
+.admin
+	h1
+		margin-top: 2.708vw
+		margin-bottom: 4.427vw
+
+	// end section admin
+
+	// header h3
+h1
+	font-size: 3.125vw
+h3
+	font-size: 0.833vw
+	&::after
+		content: ""
+		margin-left: 0.781vw
+		height: 0.104vw
+
+	// end header h3
+	
++media-breakpoint-down(lg)
+
+	// admin section
+
+	.block-information
+		width: 100%
+
+	// end admin section
+	
+// 767	
++media-breakpoint-down(md)
+	
+	// main section
+	.main
+		height: 100vh
+		h1
+			font-size: 60px
+			+ p
+				font-size: 20px
+		h2
+			font-size: 24px
+		&__content 
+			padding: 3.906vw 3.229vw 0 3.229vw	
+			form 
+				width: 100%
+				label
+					font-size: 20px
+				input
+					font-size: 16px
+				.forgout-password
+					font-size: 16px
+				button
+					font-size: 20px
+		&__image
+			margin-top: 60px
+			img
+				height: auto
+	// end main section
+
+	
+	// header h3
+
+//	h1
+//		font-size: 30px
+//	h3
+//		font-size: 12px
+//		&::after
+//			content: ""
+//			margin-left: 10px
+//			width: 50%
+
+	// end header h3
+	
++media-breakpoint-down(sm)
+	// main section
+	.main
+		h1
+			font-size: 50px
+			+ p
+				font-size: 18px
+		h2
+			font-size: 20px
+		&__content 
+			padding: 3.906vw 3.229vw 0 3.229vw	
+			form 
+				width: 100%
+				label
+					font-size: 18px
+				input
+					font-size: 16px
+				.forgout-password
+					font-size: 16px
+				button
+					font-size: 18px
+		&__image
+			margin-top: 40px
+	// end main section
+
+
++media-breakpoint-down(xs)
+	// main section
+	.main 
+		h2
+			font-size: 14px
+		h1
+			font-size: 30px
+			+ p
+				font-size: 12px
+		&__content 
+			form 
+				label
+					font-size: 12px
+				.forgout-password
+					font-size: 12px
+				button
+					font-size: 12px
+	
+	// end main section

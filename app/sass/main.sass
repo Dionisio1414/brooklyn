@@ -156,6 +156,7 @@ footer
 				padding: 15px 63px
 				color: #4d4d4d
 				width: auto
+				height: auto
 				
 // end main section
 
@@ -868,6 +869,26 @@ footer
 			font-family: "ProximaNovaRegular", sans-serif
 			font-size: 16px
 			color: #777
+	.uppload-user
+		padding: 15px
+		box-shadow: 0 0 5px 0 rgba(0,0,0,.2)
+		width: 220px
+		border-radius: 5px
+		margin: 0 auto
+		margin-top: 60px
+		text-align: center
+		cursor: pointer
+		img
+			width: 35px
+			height: 35px
+			margin-right: 10px
+		a
+			display: inline-block
+			vertical-align: baseline
+			font-family: "RobotoMedium", sans-serif
+			font-size: 18px
+			text-decoration: underline
+			color: $main-caption
 	.table
 		thead
 			tr
@@ -882,16 +903,28 @@ footer
 			th
 				font-family: "ProximaNovaBold", sans-serif
 				font-size: 20px
+				border-top: none
+				border-bottom: 1px solid rgb(221, 221, 221)
 				color: $footer-link
+				vertical-align: middle
+				&:first-child
+					border-bottom: none
+					padding-left: 20px
 			td
 				font-family: "ProximaNovaRegular", sans-serif
-				font-size: 24px
+				font-size: 26px
+				border-top: none
+				border-bottom: 1px solid rgb(221, 221, 221)
 				color: #393939
+				vertical-align: middle
+				&:last-child
+					border-bottom: none
 				a
 					font-family: "RobotoBold", sans-serif
 					font-size: 16px
 					text-transform: uppercase
-					padding: 10px 25px
+					text-align: center
+					padding: 13px 25px
 					border-radius: 6px
 					border: 2px solid $footer-link
 					display: inline-block
@@ -907,6 +940,20 @@ footer
 						color: #fff
 					&:hover svg
 						fill: #fff
+				.edit,
+				.delete
+					width: 20%
+				.edit
+					margin-left: 35px
+				.delete
+					background-color: $footer-link
+					margin-left: 10px
+					color: #fff
+					img
+						width: 20px
+						height: 20px
+						vertical-align: text-bottom
+						margin-left: 10px
 		
 		
 // end section new user
@@ -931,5 +978,7 @@ footer
 				background-color: $main-caption
 				height: 20px
 				border-radius: 5px
-// end custom scroll		
+// end custom scroll
+
+
 @import 'media' 	
