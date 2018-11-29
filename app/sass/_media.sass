@@ -2,6 +2,16 @@
 
 +media-breakpoint-up(xl)
 	
+	// designated
+
+.designated
+	h3::after
+		width: 60%
+
+
+	// end designated	
+	
+	
 // new user	
 
 .new-user 
@@ -115,6 +125,17 @@ h3
 	// end new user
 
 +media-breakpoint-down(lg)
+	
+	
+	// designated
+
+	.designated
+		h3::after
+			width: 60%
+
+
+	// end designated	
+	
 	
 	// new user
 
@@ -254,6 +275,10 @@ h3
 	
 // 992	
 +media-breakpoint-down(md)
+	
+	.designated 
+		h3::after
+			width: 34%
 	
 	// new user
 
@@ -481,6 +506,11 @@ h3
 				margin-top: 3px
 		
 +media-breakpoint-down(sm)
+	
+		
+	.designated 
+		h3::after
+			width: 18%
 	
 	// new user
 
@@ -771,6 +801,26 @@ h3
 
 +media-breakpoint-down(xs)
 	
+	
+			
+	.designated
+		padding: 30px 10px
+		.content
+			padding: 0 10px
+		h1
+			font-size: 22px
+		h3
+			font-size: 8px
+			&::after
+				width: 22%
+				margin-left: 10px
+		h2
+			font-size: 26px
+			text-align: center
+			+ p
+				font-size: 12px
+				text-align: center
+	
 	// header h3
 
 	h1
@@ -864,11 +914,17 @@ h3
 
 	// footer
 
+	//	footer
+	//		margin-top: 40%
+	//		top: 70%
+	//		a.footer-link
+	//			font-size: 12px
+
 	footer
-		margin-top: 40%
-		top: 70%
-		a.footer-link
-			font-size: 12px
+		margin-top: 100vh
+		bottom: -85%
+		top: auto
+		margin-bottom: 5%
 
 	// end footer
 
@@ -938,8 +994,9 @@ h3
 			font-size: 18px
 			margin-top: 20px
 		footer
-			top: 100%
-			margin-bottom: 20px
+			top: auto
+			margin-bottom: 5%
+			bottom: -130%
 
 	.report-chk .caption-row+.row ul li input[type=checkbox]+label
 		font-size: 16px
@@ -1191,6 +1248,13 @@ h3
 				width: 90%
 	
 	// end grid section
+
+	.designated
+		h3
+			font-size: 7px
+			&::after
+				width: 3%
+				margin-left: 3px
 	
 @media screen and(max-width: 375px)
 	
