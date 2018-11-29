@@ -34,5 +34,6 @@ $(function() {
 		});
 	
 	$('.scroll-pane').jScrollPane();
+	$('.scroll-pane').jScrollPane();
 });
 	

@@ -2,6 +2,18 @@
 
 +media-breakpoint-up(xl)
 	
+// new user	
+
+.new-user 
+	.table 
+		tbody 
+			td 
+				.delete
+					white-space: nowrap
+					img
+						margin-left: .5vw
+// end new user	
+	
 // main section
 .main
 	h1, h2
@@ -92,7 +104,29 @@ h3
 
 	// end header h3
 	
+@media screen and(max-width: 1440px)
+	
+	// new user
+
+	.new-user .table tbody td .delete, 
+	.new-user .table tbody td .edit
+		width: 25%
+
+	// end new user
+
 +media-breakpoint-down(lg)
+	
+	// new user
+
+	.new-user 
+		.table 
+			tbody 
+				td 
+					.delete,
+					.edit
+						width: 35%
+
+	// end new user
 
 	// admin section
 
@@ -193,9 +227,46 @@ h3
 								vertical-align: sub
 
 	// end managment section
+
+
+	// page forms
+
+	.forms
+		h1
+			font-size: 26px
+		h2
+			font-size: 30px 
+		.content 
+			form 
+				width: 100%
+				label
+					font-size: 20px
+		.row.buttons
+			width: 100%
+	// end page forms
+
+	.documentation 
+		.content 
+			.row:first-child
+				width: 80%
+		.caption-row
+			width: 86%
 	
-// 767	
+// 992	
 +media-breakpoint-down(md)
+	
+	// new user
+
+	.new-user 
+		.table 
+			tbody 
+				td 
+					.delete,
+					.edit
+						width: 39%
+
+		// end new user
+
 	
 	// main section
 	.main
@@ -382,7 +453,64 @@ h3
 	
 	// end managment form section
 
+
+	.documentation 
+		h1
+			font-size: 26px
+		h2
+			font-size: 32px
+		.content 
+			.upload-button
+				font-size: 16px
+				img
+					width: 25px
+					height: 25px
+			.scroll-pane 
+				ul 
+					li 
+						a 
+							.report-desription
+								font-size: 14px
+		.row.buttons
+			width: 86%
+		.link-next, .link-prev
+			font-size: 12px
+			svg
+				width: 12px
+				height: 12px
+				margin-top: 3px
+		
 +media-breakpoint-down(sm)
+	
+	// new user
+
+	.new-user 
+		h1
+			font-size: 24px
+		h2
+			font-size: 24px
+			+ p
+				font-size: 14px
+		.table 
+			thead 
+				tr
+					font-size: 16px
+			tbody 
+				th
+					font-size: 16px
+				td
+					font-size: 16px
+					a
+						font-size: 12px
+						padding: 9px 15px
+					.delete
+						img
+							width: 15px
+							height: 15px
+	
+	
+	// end new user
+	
 	
 	// block__info
 
@@ -532,6 +660,10 @@ h3
 	// managment form section
 
 	.managment.results
+		h2
+			margin-left: 0
+			+ p
+				margin-left: 0
 		.main-caption 
 			h4
 				font-size: 21px
@@ -571,11 +703,71 @@ h3
 							img
 								width: 25px
 								height: 25px
-							
-	
-		
 	
 	// end managment form section
+
+	// page forms
+
+	.forms
+		h1
+			font-size: 21px
+		h2
+			font-size: 24px 
+		.content 
+			form 
+				width: 100%
+				label
+					font-size: 14px
+				span
+					font-size: 14px
+		.row.buttons
+			max-width: 107%
+			width: 107%
+			.link-next,
+			.link-prev,
+				font-size: 10px
+			.link-next svg, 
+			.link-prev svg
+				width: 9px
+				height: 9px
+				margin-top: 3px
+	
+	// end page forms
+
+	.documentation
+		.closed,
+		.save
+			padding: 5px 0
+			width: 35%
+			font-size: 12px
+		h1
+			font-size: 21px
+		h2
+			font-size: 26px
+		.caption-row
+			width: 100%
+		.content
+			.row:first-child
+				width: 100%
+			.upload-button
+				font-size: 14px
+			.scroll-pane 
+				ul 
+					li 
+						a 
+							img
+								width: 25px
+								height: 25px
+							.report-desription
+								font-size: 10px
+		.row.buttons
+			width: 86%
+		.link-next, .link-prev
+			font-size: 12px
+			svg
+				width: 12px
+				height: 12px
+				margin-top: 3px
 
 +media-breakpoint-down(xs)
 	
@@ -830,6 +1022,146 @@ h3
 	// end managment forms
 
 
+	// managment results
+
+	.managment.results 
+		.content
+			padding: 0 10px
+			h4
+				font-size: 14px
+			.upload-button
+				font-size: 14px
+			h5
+				font-size: 16px
+				&:first-child
+					margin-top: 30px
+			.p-block 
+				.p-caption
+					font-size: 14px
+					line-height: 17px
+			form 
+				label
+					font-size: 16px
+				textarea
+					width: 100%
+			.save-close,
+			.save-keep
+				font-size: 10px
+		footer
+			padding: 0 10px
+			margin-top: 125%
+			top: 100%
+				
+		
+	// end managment results
+
+
+	// page forms
+
+	.forms
+		padding: 30px 10px
+		h1
+			font-size: 21px
+		h2
+			font-size: 20px
+			text-align: center
+		h3
+			&::after
+				width: 64%
+		.content 
+			form 
+				width: 100%
+				label
+					font-size: 12px
+				span
+					font-size: 12px
+		.row.buttons
+			max-width: 112%
+			width: 112%
+			.link-next,
+			.link-prev,
+				font-size: 8px
+			.link-next
+				float: right
+			.link-next svg, 
+			.link-prev svg
+				margin-top: 1px
+		footer
+			top: 80%
+	// end page forms
+
+	.documentation
+		padding: 30px 10px
+		.closed,
+		.save
+			padding: 5px 0
+			width: 35%
+			font-size: 12px
+		h1
+			font-size: 21px
+		h2
+			font-size: 22px
+			text-align: center
+		.caption-row
+			width: 120%
+			margin-left: -26px
+			padding-left: 0
+			text-align: center
+		.content
+			.scroll-pane 
+				ul 
+					li 
+						a
+							font-size: 14px
+							.report-desription
+								font-size: 8px
+			.container-fluid
+				padding: 0
+			.row
+				margin: 0
+			.row:first-child
+				width: 100%
+			.upload-button
+				font-size: 12px
+				margin-bottom: 0
+			.scroll-pane 
+				ul 
+					li 
+						a 
+							img
+								width: 25px
+								height: 25px
+							.report-desription
+								font-size: 10px
+		.row.buttons
+			width: 100%
+		.link-next, .link-prev
+			font-size: 10px
+			svg
+				width: 9px
+				height: 9px
+		.link-next
+			float: right
+
+	// new user
+	.new-user 
+		footer,
+		header
+			padding: 30px 10px
+		h1
+			margin-bottom: 0
+		h2
+			text-align: center
+			+ p
+				text-align: center
+		.uppload-user 
+			a
+				font-size: 14px
+			img
+				width: 25px
+				height: 25px
+
+	// end new user
 @media screen and(max-width: 425px)
 	
 	// grid section
@@ -841,3 +1173,23 @@ h3
 	
 	// end grid section
 	
+@media screen and(max-width: 375px)
+	
+	// managment results
+
+	.managment.results 
+		footer
+			padding: 0 10px
+			margin-top: 230%
+			top: 100%
+				
+		
+	// end managment results
+
+	.documentation
+		.content 
+			.upload-button
+				font-size: 9px
+				img
+					width: 20px
+					height: 20px
